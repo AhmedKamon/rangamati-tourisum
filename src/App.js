@@ -1,11 +1,14 @@
 import './App.css';
+import About from './Components/About';
+import Header from './Components/Header';
 import './sass/main.scss'
-import Header from './Components/Header/Header';
+
 
 function App() {
   return (
     <>
     <Header/>
+    <About/>
     </>
   );
 }
