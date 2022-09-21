@@ -1,3 +1,4 @@
+
 .heading-primary {
     color: white;
     text-transform: uppercase;
@@ -22,4 +23,14 @@
     
       animation: moveInright 3s ease-out;
     }
+  }
+  .heading-secondary{
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+
+    background-image: linear-gradient(to right,#7ed56f,#28b485);
+    display: inline-block;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
