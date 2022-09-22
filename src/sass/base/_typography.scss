@@ -1,44 +1,53 @@
-
 .heading-primary {
-    color: white;
-    text-transform: uppercase;
-    margin-bottom: 6rem;
-  
-    backface-visibility: hidden;
-    &--main {
-      display: block;
-      font-size: 6rem;
-      font-weight: 400;
-      letter-spacing: 3.5rem;
-    
-      animation-name: moveInLeft;
-      animation-duration: 3s;
-      animation-timing-function: ease-out;
-    }
-    &--sub {
-      display: block;
-      font-size: 2rem;
-      font-weight: 400;
-      letter-spacing: 2rem;
-    
-      animation: moveInright 3s ease-out;
-    }
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 6rem;
+
+  backface-visibility: hidden;
+  &--main {
+    display: block;
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 3.5rem;
+
+    animation-name: moveInLeft;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
   }
-  .heading-secondary{
-    font-size: 3.5rem;
-    text-transform: uppercase;
-    font-weight: 700;
-    letter-spacing: 2px;
+  &--sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 2rem;
 
-    background-image: linear-gradient(to right,#7ed56f,#28b485);
-    display: inline-block;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-
-    transition: all .2s;
-
-
-    &:hover{
-      letter-spacing: 5px;
-    }
+    animation: moveInright 3s ease-out;
   }
+}
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+
+  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  display: inline-block;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  transition: all 0.5s;
+
+  &:hover {
+    letter-spacing: 5px;
+  }
+}
+.heading-third{
+font-size: 1.6rem;
+font-weight: 700;
+text-transform: uppercase;
+}
+.paragraph{
+font-size: 1.6rem;
+&:not(:last-child){
+  margin-bottom: 3rem;
+}
+}
