@@ -3,7 +3,7 @@ import Logo from '../images/logo.png'
 
 function Header() {
   return (
-    <>
+   
     <div className='header' >
       <div className="header__logo-container">
         <img src={Logo} className='header__logo' alt="Logo" />
@@ -18,7 +18,7 @@ function Header() {
       </div>
     </div>
     
-    </>
+   
   )
 }
 
