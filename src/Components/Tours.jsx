@@ -8,6 +8,11 @@ function Tours() {
           Adventure to the exciting culture of mountain
         </h2>
       </div>
+      <div className="row-tours">
+        <div className="col-1-of-3">1</div>
+        <div className="col-1-of-3">1</div>
+        <div className="col-1-of-3">1</div>
+      </div>
     </section>
   );
 }
