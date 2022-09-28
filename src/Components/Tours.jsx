@@ -9,7 +9,12 @@ function Tours() {
         </h2>
       </div>
       <div className="row-tours">
-        <div className="col-1-of-3">1</div>
+        <div className="col-1-of-3">
+          <div className="card">
+            <div className="card__side card__side--front">front</div>
+            <div className="card__side card__side--back">back</div>
+          </div>
+        </div>
         <div className="col-1-of-3">1</div>
         <div className="col-1-of-3">1</div>
       </div>
