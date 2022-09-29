@@ -3,25 +3,35 @@
   -moz-perspective: 150rem;
   position: relative;
   height: 50rem;
-  
+
   &__side {
-      position: absolute;
-      height: 50rem;
+    position: absolute;
+    height: 50rem;
     width: 100%;
     top: 0;
     left: 0;
     font-size: 2rem;
     backface-visibility: hidden;
     color: white;
-    background-color: orangered;
     transition: all 0.8s ease;
 
-    &--front{
-        background-color: aqua;
+    &--front {
+      background-color: aqua;
     }
-    &--back{
-        background-color:aquamarine;
-        transform: rotateY(180deg);
+    &--back {
+      transform: rotateY(180deg);
+      &-1 {
+        background-color: black;
+        background-image: linear-gradient(to right bottom, #FF9494 , #FFEF82);
+      }
+      &-2 {
+        background-color: black;
+        background-image: linear-gradient(to right bottom, #FFF5E4 , #FF9494);
+      }
+      &-3 {
+        background-color: black;
+        background-image: linear-gradient(to right bottom, #FFF5E4 , #FF9494);
+      }
     }
   }
 
