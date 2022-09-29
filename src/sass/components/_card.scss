@@ -5,40 +5,65 @@
   height: 50rem;
 
   &__side {
+    color: white;
+    font-size: 2rem;
+
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.096) 0px 10px 20px,
+      rgba(0, 0, 0, 0.096) 0px 5px 5px;
     position: absolute;
     height: 50rem;
     width: 100%;
     top: 0;
     left: 0;
-    font-size: 2rem;
     backface-visibility: hidden;
-    color: white;
     transition: all 0.8s ease;
 
     &--front {
-      background-color: aqua;
     }
     &--back {
       transform: rotateY(180deg);
       &-1 {
-        background-color: black;
-        background-image: linear-gradient(to right bottom, #FF9494 , #FFEF82);
+        background-image: linear-gradient(
+          to right bottom,
+          #fad609ad,
+          #ff6600b0
+        );
       }
       &-2 {
         background-color: black;
-        background-image: linear-gradient(to right bottom, #FFF5E4 , #FF9494);
+        background-image: linear-gradient(to right bottom, #fff5e4, #ff9494);
       }
       &-3 {
         background-color: black;
-        background-image: linear-gradient(to right bottom, #FFF5E4 , #FF9494);
+        background-image: linear-gradient(to right bottom, #fff5e4, #ff9494);
       }
     }
   }
 
   &:hover &__side--front {
-    transform: rotateY(180deg);
+    transform: rotateY(-180deg);
   }
   &:hover &__side--back {
     transform: rotateY(0);
+  }
+  // card front style
+  &__picture {
+    background-size: cover;
+    height: 23rem;
+    background-blend-mode: screen;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+
+    &-1 {
+      background-image: linear-gradient(to right bottom, #fad609ad, #ff6600b0),
+        url("../../images/about3.jpg");
+    }
+    &-2 {
+      background-image: url("../../images/about3.jpg");
+    }
+    &-3 {
+      background-image: url("../../images/about3.jpg");
+    }
   }
 }

@@ -11,8 +11,14 @@ function Tours() {
       <div className="row-tours">
         <div className="col-1-of-3">
           <div className="card">
-            <div className="card__side card__side--front">front</div>
-            <div className="card__side card__side--back card__side--back-1">back</div>
+            <div className="card__side card__side--front">
+              <div className="card__picture card__picture-1"> &nbsp; </div>
+              <div className="card__heading">heding</div>
+              <div className="card__details">details</div>
+            </div>
+            <div className="card__side card__side--back card__side--back-1">
+              back
+            </div>
           </div>
         </div>
         <div className="col-1-of-3">1</div>
