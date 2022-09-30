@@ -16,10 +16,24 @@ function Tours() {
               <h4 className="card__heading">
                 <span className="card__heading-span card__heading-span-1">Explore The mountain </span>
               </h4>
-              <div className="card__details">details</div>
+              <div className="card__details">
+                <ul>
+                  <li>7 day tour</li>
+                  <li>Up to 15 people</li>
+                  <li>2 tour guides</li>
+                  <li>Sleep in cozy hotel</li>
+                  <li>Difficulity: easy</li>
+                </ul>
+              </div>
             </div>
             <div className="card__side card__side--back card__side--back-1">
-              back
+              <div className="card__cta">
+                <div className="card__price-box">
+                  <p className="card__price-only">Only</p>
+                  <p className="card__price-value">1200</p>
+                </div>
+                <a href="#/" className="btn btn--white" >Book Now</a>
+              </div>
             </div>
           </div>
         </div>
