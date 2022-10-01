@@ -32,12 +32,10 @@
         );
       }
       &-2 {
-        background-color: black;
-        background-image: linear-gradient(to right bottom, #fff5e4, #ff9494);
+        background-image: linear-gradient(to right bottom, #94f15dc9, #acbd16c7);
       }
       &-3 {
-        background-color: black;
-        background-image: linear-gradient(to right bottom, #fff5e4, #ff9494);
+        background-image: linear-gradient(to right bottom, #3f9cf3, #1b09c4);
       }
     }
   }
@@ -61,10 +59,10 @@
         url("../../images/about3.jpg");
     }
     &-2 {
-      background-image: url("../../images/about3.jpg");
+      background-image: linear-gradient(to right bottom, #94f15dc9, #acbd16c7),url("../../images/about2.jpg");
     }
     &-3 {
-      background-image: url("../../images/about3.jpg");
+      background-image: linear-gradient(to right bottom, #3f9cf3, #1b09c4),url("../../images/about3.jpg");
     }
   }
   &__heading {
@@ -83,6 +81,12 @@
     box-decoration-break: clone;
     &-1 {
       background-image: linear-gradient(to right bottom, #fad609c9, #ff6600c7);
+    }
+    &-2 {
+      background-image: linear-gradient(to right bottom, #60f50ac9, #0da326c7);
+    }
+    &-3 {
+      background-image: linear-gradient(to right bottom, #3f9cf3, #1b09c4);
     }
   }
   &__details {
