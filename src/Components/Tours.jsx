@@ -3,7 +3,7 @@ import React from "react";
 function Tours() {
   return (
     <section className="section-tours">
-      <div className="u-center-text  u-mb-2">
+      <div className="u-center-text  u-mb-8">
         <h2 className="heading-secondary">
           Adventure to the exciting culture of nature
         </h2>
