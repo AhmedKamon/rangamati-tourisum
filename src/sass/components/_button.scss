@@ -21,6 +21,10 @@
   background-color: $color-white;
   color: $color-gray-dark;
 }
+.btn--green {
+  background-color: rgb(38, 156, 73);
+  color: #fff;
+}
 .btn::after {
   content: "";
   display: inline-block;
@@ -36,6 +40,9 @@
 }
 .btn--white::after {
   background-color: $color-white;
+}
+.btn--green::after {
+  background-color: rgb(38, 156, 73);
 }
 .btn:hover::after {
   transform: scaleX(1.4) scaleY(1.6);

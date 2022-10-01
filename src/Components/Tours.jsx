@@ -94,6 +94,9 @@ function Tours() {
           </div>
         </div>
       </div>
+      <div className="u-center-text  u-mb-2 u-mt-8">
+        <a href="/" className="btn btn--green">Book Now</a>
+      </div>
     </section>
   );
 }

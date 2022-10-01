@@ -32,10 +32,10 @@
         );
       }
       &-2 {
-        background-image: linear-gradient(to right bottom, #94f15dc9, #acbd16c7);
+        background-image: linear-gradient(to right bottom, #3f9cf3, #1b09c4);
       }
       &-3 {
-        background-image: linear-gradient(to right bottom, #3f9cf3, #1b09c4);
+        background-image: linear-gradient(to right bottom, #94f15dc9, #acbd16c7);
       }
     }
   }
@@ -53,16 +53,17 @@
     background-blend-mode: screen;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    overflow: hidden;
 
     &-1 {
       background-image: linear-gradient(to right bottom, #fad609ad, #ff6600b0),
         url("../../images/about3.jpg");
     }
     &-2 {
-      background-image: linear-gradient(to right bottom, #94f15dc9, #acbd16c7),url("../../images/about2.jpg");
+      background-image: linear-gradient(to right bottom, #3f9cf3, #1b09c4),url("../../images/about3.jpg");
     }
     &-3 {
-      background-image: linear-gradient(to right bottom, #3f9cf3, #1b09c4),url("../../images/about3.jpg");
+      background-image: linear-gradient(to right bottom, #94f15dc9, #acbd16c7),url("../../images/about2.jpg");
     }
   }
   &__heading {
@@ -83,10 +84,10 @@
       background-image: linear-gradient(to right bottom, #fad609c9, #ff6600c7);
     }
     &-2 {
-      background-image: linear-gradient(to right bottom, #60f50ac9, #0da326c7);
+      background-image: linear-gradient(to right bottom, #3f9cf3, #1b09c4);
     }
     &-3 {
-      background-image: linear-gradient(to right bottom, #3f9cf3, #1b09c4);
+      background-image: linear-gradient(to right bottom, #60f50ac9, #0da326c7);
     }
   }
   &__details {
