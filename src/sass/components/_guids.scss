@@ -1,7 +1,7 @@
 .guide{
     width: 75%;
-    margin: 0 auto;
-    box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.384);
+    margin: 2.5rem auto;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
     background-color: #fff;
     border-radius: 3px;
     padding: 6rem;
@@ -14,10 +14,33 @@
         shape-outside: circle(50% at 50% 50%);
         clip-path: circle(50% at 50% 50%);
         transform: translateX(-3rem);
+        position: relative;
     }
     &__img{
         height: 100%;
-        background-position: center;
-        background-size: contain;
+        transform: translateX(-4rem) scale(1.4);
+        backface-visibility: hidden;
+        transition: all .5s ;
+    }
+    &:hover &__img{ 
+        transform: translateX(-4rem) scale(1);
+        filter: blur(4px) brightness(70%);
+
+    }
+    &__caption{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,20%);
+        color: white;
+        text-transform: uppercase;
+        text-align: center;
+        opacity: 0;
+        transition: all .5s;
+        backface-visibility: hidden;
+    }
+    &:hover &__caption{
+        opacity: 1;
+        transform: translate(-50%,-50%);
     }
 }
