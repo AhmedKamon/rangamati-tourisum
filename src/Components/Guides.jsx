@@ -46,6 +46,9 @@ function Guides() {
           </div>
         </div>
       </div>
+      <div className="u-center-text  u-mt-8">
+        <a href="/" className="btn-text">View more Ninjas as guides &rarr; </a>
+      </div>
     </section>
   );
 }
