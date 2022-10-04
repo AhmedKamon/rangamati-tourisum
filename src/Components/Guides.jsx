@@ -9,7 +9,7 @@ function Guides() {
     <section className="section-guides">
       <div className="bg-video">
         <video className="bg-video__content" autoPlay muted loop>
-          <source src={video} />
+          <source src={video} type='video/mp4' />
           your browser dos not support this video
         </video>
       </div>
