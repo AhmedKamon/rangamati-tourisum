@@ -21,7 +21,7 @@ function Book() {
                   placeholder="Full Name"
                   required
                 />
-                <label htmlFor="name">Full Name</label>
+                <label htmlFor="name" className="form__label">Full Name</label>
               </div>
               <div className="form__group">
                 <input
