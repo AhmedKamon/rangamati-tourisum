@@ -32,7 +32,7 @@ function Book() {
                   placeholder="email"
                   required
                 />
-                <label htmlFor="email">Email</label>
+                <label htmlFor="email" className="form__label">Email</label>
               </div>
             </form>
           </div>
