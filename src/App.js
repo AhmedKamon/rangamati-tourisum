@@ -6,7 +6,7 @@ import './App.css';
 // import Guides from './Components/Guides';
 // import Header from './Components/Header';
 // import Tours from './Components/Tours';
-import './sass/main.scss'
+import './sass/main.scss';
 const About = lazy(() => import("./Components/About"));
 const Book = lazy(() => import("./Components/Book"));
 const Featchers = lazy(() => import("./Components/Featchers"));

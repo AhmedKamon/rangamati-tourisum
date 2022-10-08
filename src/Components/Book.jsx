@@ -7,11 +7,9 @@ function Book() {
       <div className="row">
         <div className="book">
           <div className="book__form">
-          <div className="u-mb-2">
-        <h2 className="heading-secondary">
-          Let's chat
-        </h2>
-      </div>
+            <div className="u-mb-2">
+              <h2 className="heading-secondary">Let's chat</h2>
+            </div>
             <form action="#" className="form">
               <div className="form__group">
                 <input
@@ -22,7 +20,9 @@ function Book() {
                   placeholder="Full Name"
                   required
                 />
-                <label htmlFor="name" className="form__label">Full Name</label>
+                <label htmlFor="name" className="form__label">
+                  Full Name
+                </label>
               </div>
               <div className="form__group">
                 <input
@@ -33,7 +33,33 @@ function Book() {
                   placeholder="email"
                   required
                 />
-                <label htmlFor="email" className="form__label">Email</label>
+                <label htmlFor="email" className="form__label">
+                  Email
+                </label>
+              </div>
+              <div className="form__group">
+                <div className="form__radio-group">
+                  <input
+                    type="radio"
+                    className="form__radio-input"
+                    id="small"
+                    name="radio-group"
+                  />
+                  <label htmlFor="small" className="form__radio-label">
+                    <span className="form__radio-btn"></span>Small tour group
+                  </label>
+                </div>
+                <div className="form__radio-group">
+                  <input
+                    type="radio"
+                    className="form__radio-input"
+                    id="large"
+                    name="radio-group"
+                  />
+                  <label htmlFor="large" className="form__radio-label">
+                    <span className="form__radio-btn"></span>Large tour group
+                  </label>
+                </div>
               </div>
             </form>
           </div>
@@ -42,8 +68,8 @@ function Book() {
     </section>
   );
 }
-export default memo(Book,{
-  isReact: true
+export default memo(Book, {
+  isReact: true,
 });
 
 // export default Book;
