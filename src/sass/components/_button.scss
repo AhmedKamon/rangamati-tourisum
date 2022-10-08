@@ -1,4 +1,4 @@
-.btn:link,
+.btn,.btn:link,
 .btn:visited {
   text-transform: uppercase;
   padding: 1.5rem 4rem;
@@ -6,8 +6,11 @@
   border-radius: 100px;
   transition: all 0.2s;
   font-size: 1.6rem;
-
   position: relative;
+
+  // change button
+  border: none;
+  cursor: pointer;
 }
 .btn:hover {
   transform: translateY(-3px);

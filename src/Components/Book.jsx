@@ -37,7 +37,7 @@ function Book() {
                   Email
                 </label>
               </div>
-              <div className="form__group">
+              <div className="form__group  u-mb-4">
                 <div className="form__radio-group">
                   <input
                     type="radio"
@@ -60,6 +60,9 @@ function Book() {
                     <span className="form__radio-btn"></span>Large tour group
                   </label>
                 </div>
+              </div>
+              <div className="form__group">
+                <button className="btn btn--green">Submit Now &rarr;</button>
               </div>
             </form>
           </div>
