@@ -1,4 +1,5 @@
 import React from "react";
+import { memo } from "react";
 
 function Book() {
   return (
@@ -41,5 +42,8 @@ function Book() {
     </section>
   );
 }
+export default memo(Book,{
+  isReact: true
+});
 
-export default Book;
+// export default Book;
