@@ -1,5 +1,6 @@
 import { lazy, Suspense } from 'react';
 import './App.css';
+// import Footer from './Components/Footer';
 // import About from './Components/About';
 // import Book from './Components/Book.jsx';
 // import Featchers from './Components/Featchers';
@@ -13,6 +14,7 @@ const Featchers = lazy(() => import("./Components/Featchers"));
 const Guides = lazy(() => import("./Components/Guides"));
 const Header = lazy(() => import("./Components/Header"));
 const Tours = lazy(() => import("./Components/Tours"));
+const Footer = lazy(() => import("./Components/Footer"));
 
 
 function App() {
@@ -26,6 +28,7 @@ function App() {
     <Guides/>
     <Book/>
     </Suspense>
+    <Footer/>
     </>
   );
 }
