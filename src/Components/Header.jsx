@@ -1,12 +1,14 @@
 
 import Logo from '../images/logo.png'
+import Navbar from './Navbar'
 
 function Header() {
   return (
    
     <div className='header' >
       <div className="header__logo-container">
-        <img src={Logo} className='header__logo' alt="Logo" />
+        
+        {/* <img src={Logo} className='header__logo' alt="Logo" /> */}
       </div>
       <div className="header__text-box">
 

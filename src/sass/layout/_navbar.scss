@@ -1,20 +1,77 @@
+
 .nav-section{
+    z-index: 1;
     position: absolute;
-    z-index: 2;
-    color: white;
-    position: fixed;
+    color: #fff;
 }
+
 .navbar{
+    position: fixed;
+    width: 100%;
     top: 0;
     left: 0;
-    width: 100vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 3rem;
-
+    padding:0 4rem 0 4rem;
     &--logo{
         text-transform: uppercase;
         font-weight: bolder;
     }
+}
+.nav-overlay{
+  position: fixed;
+  background: $color-primary; 
+  width: 100%;
+  height: 100vh;
+  top: -100%;
+  left: 0;
+  overflow: hidden;
+  padding: 4rem;
+  transition: all .2s cubic-bezier(0.16,1,0.3,1);
+}
+.menu-toggle{
+cursor: pointer;
+}
+.hamBox{
+    position: relative;
+   width: 2rem; 
+   height: 2rem; 
+   cursor: pointer;
+   border-radius: 50%;
+   transition: 0.3s ease;
+   padding: 2.5em;
+
+   &:hover{
+    background: #2a2a2f;
+   }
+}
+.hamBoxOpen{
+background: #2a2a2f;
+
+}
+.lineTop, .lineBottom{
+   margin: 0 auto;
+   position: absolute;
+   display: block;
+   width: 24px;
+   height: 2px;
+   border-radius: 10px;
+   background:rgba($color: #fff, $alpha: .5);
+   left: 0;
+   right: 0;
+   transform: rotate(0deg);
+   transition: all .4s;
+}
+.lineTop{top: 2.2em;}
+.lineBottom{bottom: 2.2em;}
+.lineTop .span{
+    top: 2.35rem;
+    transform: rotate(135deg);
+    background: #fff;
+}
+.lineBottom .span{
+    top: 2.35rem;
+    transform: rotate(225deg);
+    background: #fff;
 }
