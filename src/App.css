@@ -24,3 +24,10 @@ a{
     color: unset;
     text-decoration: none;
 } */
+a{
+    color: unset;
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
