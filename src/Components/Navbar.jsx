@@ -16,7 +16,27 @@ function Navbar() {
             </div>
           </div>
         </div>
-        <div className="nav-overlay" style={{top: navOpen? '0' : '-100%', transitionDelay: navOpen? '0s': '0s'}} ></div>
+        <div className="nav-overlay" style={{top: navOpen? '0' : '-100%', transitionDelay: navOpen? '0s': '0s'}} >
+          {/*//TODO: create links  */}
+          <ul className="nav-links">
+            <li className="nav-item">
+              <a href="/">Home</a>
+              <div className="nav-item-wrapper"></div>
+            </li>
+            <li className="nav-item">
+              <a href="/">About</a>
+              <div className="nav-item-wrapper"></div>
+            </li>
+            <li className="nav-item">
+              <a href="/">Booking</a>
+              <div className="nav-item-wrapper"></div>
+            </li>
+            <li className="nav-item">
+              <a href="/">Booking</a>
+              <div className="nav-item-wrapper"></div>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
   );
