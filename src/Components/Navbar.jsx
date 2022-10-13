@@ -11,12 +11,12 @@ function Navbar() {
           <div className="navbar-logo">RGT-ISM</div>
           <div className="menu-toggle" onClick={()=> setNavOpen(!navOpen)}>
             <div className={navOpen ? 'hamBox hamBoxOpen': 'hamBox'}>
-              <span className="lineTop"></span>
-              <span className="lineBottom"></span>
+              <span className={navOpen? 'lineTop span': 'lineTop'}></span>
+              <span className={navOpen? 'lineBottom span': 'lineBottom'}></span>
             </div>
           </div>
         </div>
-        <div className="nav-overlay"></div>
+        <div className="nav-overlay" style={{top: navOpen? '0' : '-100%', transitionDelay: navOpen? '0s': '0s'}} ></div>
       </div>
     </section>
   );
