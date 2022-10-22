@@ -1,8 +1,10 @@
 import React from "react";
 import { memo } from "react";
+import img1 from '../images/about1.jpg'
+import img2 from '../images/about2.jpg'
 
 function Book() {
-  return (
+  return (<>
     <section className="section-book">
       <div className="row">
         <div className="book">
@@ -69,6 +71,24 @@ function Book() {
         </div>
       </div>
     </section>
+
+    <div className="popup">
+      <div className="popup__content">
+        <div className="popup__left">
+          <img src={img1} alt=" user" className="popup__img" />
+          <img src={img2} alt=" user" className="popup__img" />
+        </div>
+        <div className="popup__right">
+          <h2 className="heading-secondary u-mb-2">Start booking now</h2>
+          <h3 className="heading-third u-mb-2">Importent &nbash; terms and condition applyes </h3>
+          <p className="popup__text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis quaerat eum ipsa! Nisi veniam quas accusamus exercitationem cum possimus nam officia ex, beatae, eaque, mollitia itaque corporis est? Earum, ea? Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae.
+          </p>
+          <a href="/" className="btn btn--green">Book Now</a>
+        </div>
+      </div>
+    </div>
+    </>
   );
 }
 export default memo(Book, {
