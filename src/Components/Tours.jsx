@@ -2,7 +2,7 @@ import React from "react";
 
 function Tours() {
   return (
-    <section className="section-tours">
+    <section className="section-tours" id="section-tours">
       <div className="u-center-text  u-mb-8">
         <h2 className="heading-secondary">
           Adventure to the exciting culture of nature
@@ -32,7 +32,7 @@ function Tours() {
                   <p className="card__price-only">Only</p>
                   <p className="card__price-value">1200</p>
                 </div>
-                <a href="#/" className="btn btn--white" >Book Now</a>
+                <a href="#popup" className="btn btn--white" >Book Now</a>
               </div>
             </div>
           </div>
@@ -60,7 +60,7 @@ function Tours() {
                   <p className="card__price-only">Only</p>
                   <p className="card__price-value">2000</p>
                 </div>
-                <a href="#/" className="btn btn--white" >Book Now</a>
+                <a href="#popup" className="btn btn--white" >Book Now</a>
               </div>
             </div>
           </div>
@@ -88,14 +88,14 @@ function Tours() {
                   <p className="card__price-only">Only</p>
                   <p className="card__price-value">1200</p>
                 </div>
-                <a href="#/" className="btn btn--white" >Book Now</a>
+                <a href="#popup" className="btn btn--white" >Book Now</a>
               </div>
             </div>
           </div>
         </div>
       </div>
       <div className="u-center-text  u-mb-2 u-mt-8">
-        <a href="/" className="btn btn--green">Book Now</a>
+        <a href="#popup" className="btn btn--green">Book Now</a>
       </div>
     </section>
   );

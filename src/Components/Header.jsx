@@ -16,7 +16,7 @@ function Header() {
         <span className="heading-primary--main">RANGAMATI</span>
         <span className="heading-primary--sub">is where life happens</span>
       </h1>
-        <a className='btn btn--white animated--btn' href="/">Discover Now</a>
+        <a className='btn btn--white animated--btn' href="#section-book">Discover Now</a>
       </div>
     </div>
     

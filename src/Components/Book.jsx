@@ -5,7 +5,7 @@ import img2 from '../images/about2.jpg'
 
 function Book() {
   return (<>
-    <section className="section-book">
+    <section className="section-book" id="section-book">
       <div className="row">
         <div className="book">
           <div className="book__form">
@@ -72,13 +72,14 @@ function Book() {
       </div>
     </section>
 
-    <div className="popup">
+    <div className="popup" id="popup">
       <div className="popup__content">
         <div className="popup__left">
           <img src={img1} alt=" user" className="popup__img" />
           <img src={img2} alt=" user" className="popup__img" />
         </div>
         <div className="popup__right">
+          <a href="#section-tours" className="popup__close"> X</a>
           <h2 className="heading-secondary u-mb-2">Start booking now</h2>
           <h3 className="heading-third u-mb-2">Importent &nbash; terms and condition applyes </h3>
           <p className="popup__text">
