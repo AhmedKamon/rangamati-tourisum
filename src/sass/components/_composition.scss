@@ -1,5 +1,10 @@
+@import '../abstracts/mixins';
 .composition{
-position: relative;
+    position: relative;
+    @include respond(phone){
+        margin-top: 3rem;
+        margin-bottom: 20rem;
+       }
     &__photo{
         width: 55%;
         box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.288);

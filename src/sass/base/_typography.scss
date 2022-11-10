@@ -1,3 +1,5 @@
+@import '../abstracts/mixins';
+
 .heading-primary {
   color: white;
   text-transform: uppercase;
@@ -13,6 +15,11 @@
     animation-name: moveInLeft;
     animation-duration: 3s;
     animation-timing-function: ease-out;
+
+    @include respond(phone){
+      letter-spacing: 2rem;
+      font-size: 5rem;
+    }
   }
   &--sub {
     display: block;
@@ -21,6 +28,10 @@
     letter-spacing: 2rem;
 
     animation: moveInright 3s ease-out;
+
+    @include respond(phone){
+      letter-spacing: 1rem;
+    }
   }
 }
 .heading-secondary {
@@ -36,6 +47,13 @@
 
   transition: all 0.5s;
 
+  @include respond(tab-portrait){
+    font-size: 3rem;
+  }
+  @include respond(phone){
+    font-size: 3.5rem;
+  }
+
   &:hover {
     letter-spacing: 5px;
   }
@@ -44,9 +62,15 @@
 font-size: 1.6rem;
 font-weight: 700;
 text-transform: uppercase;
+@include respond(phone){
+    font-size: 2.5rem;
+  }
 }
 .paragraph{
 font-size: 1.6rem;
+@include respond(phone){
+  font-size: 2rem;
+}
 &:not(:last-child){
   margin-bottom: 3rem;
 }

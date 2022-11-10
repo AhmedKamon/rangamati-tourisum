@@ -1,16 +1,26 @@
+@import '../abstracts/mixins';
 .row {
     max-width: 1100px;
     display: flex;
     margin: 0 auto;
+    padding: 0px 3rem;
+    @include respond(phone){
+        display: flex;
+        flex-direction: column;
+       }
     
 }
 .col-1-of-2{
+    
     flex: 1;
     width: calc(100% - 5rem);
     &:not(:last-child){
         margin-right: 20px;
     }
     margin-top: 7rem;
+    @include respond(phone){
+        margin-top: 2rem;
+       }
 }
 
 .featchers-row{
