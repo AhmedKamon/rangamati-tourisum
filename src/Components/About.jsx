@@ -10,7 +10,7 @@ function About() {
           Adventure to the exciting culture of mountain
         </h2>
       </div>
-      <div className="row">
+      <div className="row" >
         <div className="col-1-of-2">
           <h3 className="heading-third u-mb-2">
             Live life like its last chance

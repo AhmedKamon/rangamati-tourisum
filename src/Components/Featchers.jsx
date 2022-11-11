@@ -22,7 +22,7 @@ function Featchers() {
           <div className="featcher-box">
             <GiMountainRoad className="featcher-box__icon" />
 
-            <h3 className="heading-featcher">Call of GiMountainRoad</h3>
+            <h3 className="heading-featcher">Call of Mountain</h3>
             <p className="featchers-box__text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
               dicta quam vitae!
