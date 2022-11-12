@@ -1,6 +1,7 @@
 import { lazy, Suspense } from 'react';
 import './App.css';
-import Navbar from './Components/Navbar';
+import Loading from './Components/Loading';
+// import Navbar from './Components/Navbar';
 // import Footer from './Components/Footer';
 // import About from './Components/About';
 // import Book from './Components/Book.jsx';
@@ -10,6 +11,7 @@ import Navbar from './Components/Navbar';
 // import Tours from './Components/Tours';
 import './sass/main.scss';
 
+const Navbar = lazy(() => import("./Components/Navbar"));
 const About = lazy(() => import("./Components/About"));
 const Book = lazy(() => import("./Components/Book"));
 const Featchers = lazy(() => import("./Components/Featchers"));
@@ -22,7 +24,7 @@ const Footer = lazy(() => import("./Components/Footer"));
 function App() {
   return (
     <>
-    <Suspense fallback={<p>Loading page...</p>}>
+    <Suspense fallback={<Loading/>}>
     <Navbar/>
     <Header/>
     <About/>
