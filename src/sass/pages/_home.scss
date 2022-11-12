@@ -1,3 +1,4 @@
+@import '../abstracts/mixins';
 .section-about{
     background-color: $color-gray-light-1;
     margin-top: -20vh;
@@ -33,15 +34,24 @@
 .section-book{
   padding: 15rem 0;
   background-image: linear-gradient(to right bottom, $color-primary-light,$color-primary-dark);
+  @include respond(tab-portrait){
+    padding: 10rem 0;
+  }
 }
 .book{
   background-image: linear-gradient( 105deg,rgba(255, 255, 255, 0.774) 50%, transparent 50%), url("../../images/about2.jpg");
   background-size: cover;
-  width: 100vw;
-  height: 50rem;
+  
+  @include respond(tab-portrait){
+    background-image: linear-gradient( 105deg,rgba(255, 255, 255, 0.651) 0%,rgba(255, 255, 255, 0.651) 70%, transparent  70%), url("../../images/about2.jpg");
+    background-size: cover;
+  }
 
   &__form{
     width: 50%;
     padding: 6rem;
+    @include respond(tab-portrait){
+      width: 70%;
+    }
   }
 }
