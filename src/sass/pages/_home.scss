@@ -41,6 +41,7 @@
 .book{
   background-image: linear-gradient( 105deg,rgba(255, 255, 255, 0.774) 50%, transparent 50%), url("../../images/about2.jpg");
   background-size: cover;
+  width: 100%;
   
   @include respond(tab-portrait){
     background-image: linear-gradient( 105deg,rgba(255, 255, 255, 0.651) 0%,rgba(255, 255, 255, 0.651) 70%, transparent  70%), url("../../images/about2.jpg");
@@ -50,6 +51,7 @@
   &__form{
     width: 50%;
     padding: 6rem;
+    color: black;
     @include respond(tab-portrait){
       width: 70%;
     }
