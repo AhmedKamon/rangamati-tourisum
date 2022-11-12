@@ -33,7 +33,7 @@ function Featchers() {
           <div className="featcher-box">
             <BiMapPin className="featcher-box__icon" />
 
-            <h3 className="heading-featcher">Track as you preferred </h3>
+            <h3 className="heading-featcher">Track as you </h3>
             <p className="featchers-box__text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
               dicta quam vitae!
